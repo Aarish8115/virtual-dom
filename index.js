@@ -4,6 +4,9 @@ import data from "./main.json" with { type: "json" };
 console.log(data);
 const createNode=(tagname,attributes,children)=>{
     const node=document.createElement(tagname);
+    for(const [key,value] of Object.entries(attributes)){
+        node.setAttribute(key,value);
+    }
     for(const elem of children){
         // console.log(elem);
         if(elem.type=="#text"){
@@ -11,7 +14,7 @@ const createNode=(tagname,attributes,children)=>{
             node.appendChild(textNode);
         }
         else{
-            const subNode=createNode(elem.type,elem.props,elem.children);
+            const subNode=createNode(elem.type,elem.attributes,elem.children);
             node.appendChild(subNode);
         }
         
@@ -19,7 +22,7 @@ const createNode=(tagname,attributes,children)=>{
     }
     return node;
 }
-const vdom=createNode("div",data.props,data.children);
+const vdom=createNode("div",data.attributes,data.children);
 const app = document.getElementById("app");
 app.parentNode.replaceChild(vdom,app);
 console.log(vdom)

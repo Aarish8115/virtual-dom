@@ -1,0 +1,36 @@
+{
+  "type": "app",
+  "attributes": [],
+  "children": [
+    {
+      "type": "h1",
+      "attributes": [],
+      "children": [{ "type": "#text", "value": "Virtual DOM" }]
+    },
+    {
+      "type": "p",
+      "attributes": [],
+      "children": [
+        {
+          "type": "#text",
+          "value": "The code for this site was written in JSON."
+        }
+      ]
+    },
+    {
+      "type": "div",
+      "children": [
+        {
+          "type": "p",
+          "attributes": [],
+          "children": [
+            {
+              "type": "#text",
+              "value": "This is a div"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

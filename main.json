@@ -1,0 +1,32 @@
+{
+  "type": "app",
+  "props": {},
+  "children": [
+    {
+      "type": "h1",
+      "props": {},
+      "children": [
+        {
+          "type": "#text",
+          "value": "Helwowowed"
+        }
+      ]
+    },
+    {
+      "type": "div",
+      "props": {},
+      "children": [
+        {
+          "type": "p",
+          "props": {},
+          "children": [
+            {
+              "type": "#text",
+              "value": "This is a paragraph"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -51,6 +51,11 @@
       },
       "children": [
         {
+          "type": "p",
+          "attributes": { "id": "count" },
+          "children": [{ "type": "#text", "value": 1 }]
+        },
+        {
           "type": "section",
           "attributes": {
             "style": "margin-bottom:40px;"
@@ -102,8 +107,7 @@
               "attributes": {
                 "style": "background:#fff; padding:16px; border:1px solid #e5e7eb; border-radius:8px;"
               },
-              "children": [
-              ]
+              "children": []
             }
           ]
         }
